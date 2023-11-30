@@ -5,7 +5,7 @@ export function NavBar() {
   return (
     <nav className="nav-bar">
       <div className="container-logo">
-        <img src="src/assets/logo.png" alt="" />
+        <img src="assets/logo.png" alt="logo" />
         <span>Cisco Payslips</span>
       </div>
       <div className="container-center"></div>
