@@ -1,0 +1,187 @@
+// $primary-color: #3498db;
+// $hover-color: #f1c40f;
+// .contianer-table {
+//   table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     text-align: center;
+//     padding: 5px;
+//     border-radius: 10px;
+//     thead {
+//         // display: table;
+//         tr {
+
+//             th {
+//                 margin-bottom: 40px;
+//                 vertical-align: top;
+//                 padding: 10px;
+//                 border: 3px solid rgba(255, 0, 212, 0.334);
+//             }
+//         }
+//     }
+//     tbody {
+//         color: #000;
+//         text-align: center;
+//         tr{height: 50px;}
+//       tr:nth-child(even) {
+//         background: rgb(164, 167, 168);
+//       }
+//       tr:nth-child(odd) {
+//         background: rgb(147, 156, 158);
+//       }
+
+//       tr:hover {
+//         background-color: $hover-color;
+//         transition: background-color 0.3s ease;
+//       }
+//     }
+//   }
+// }
+
+// table.scss
+.Container-main-table {
+  position: relative;
+  padding-bottom: 80px;
+  .controls-table {
+    padding: 20px;
+    label {
+      padding-right: 10px;
+    }
+    select {
+      width: 100px;
+      height: 40px;
+    }
+    .container-button-top {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  button {
+    width: 290px;
+    height: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0rem;
+    padding: 5px 7px;
+    // margin: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      filter: drop-shadow(2px 5px 20px #3498db);
+      font-size: 16px;
+      background-color: #3498db;
+    }
+  }
+
+  .btn-pdf {
+    width: 350px;
+    height: 50px;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    // width: 350px;
+    // height: 50px;
+    // padding: 5px 7px;
+    // margin: 20px;
+    // border: none;
+    // border-radius: 5px;
+    // transition: all 0.3s ease-in-out;
+    // cursor: pointer;
+    // &:hover {
+    //   filter: drop-shadow(2px 5px 20px #3498db);
+    //   font-size: 16px;
+    //   background-color: #3498db;
+    // }
+  }
+  .contianer-table {
+    margin: 20px;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: rgb(29 111 165 / 17%);
+
+      border-radius: 902px;
+      /* overflow: hidden; */
+    }
+    thead {
+      position: sticky;
+      top: 0;
+    }
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      position: relative;
+      text-align: center;
+      border-right: 1px solid #61a2cd;
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #4341417d; /* Colore per le righe dispari */
+
+      td {
+        color: #ffffff;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: #bcb6b6c7; /* Colore per le righe pari */
+    }
+
+    tr:hover {
+      background-color: #1e81c3;
+      transition: background-color 0.3s ease;
+    }
+
+    td button {
+      padding: 8px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    td {
+     
+      color: #000000;
+    }
+    // td:has(input[type="checkbox"]) {
+      // display: flex;
+      // justify-content: center;
+    // }
+
+    td button:hover {
+      background-color: #c0392b;
+    }
+  }
+}
+.badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 2px;
+font-size: 12px;
+  position: absolute;
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: 16px;
+  background: red;
+}

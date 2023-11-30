@@ -1,0 +1,32 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  // border:1px solid red;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0px 0px 6px #757474;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #faebd7;
+  .container-logo {
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: 600;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      padding-right: 10px;
+      filter: drop-shadow(0px -4px 6px #c34a4a);
+    }
+  }
+  .container-center {
+    font: optional;
+  }
+  .container-menu {
+    display: flex;
+    gap: 30px;
+  }
+}

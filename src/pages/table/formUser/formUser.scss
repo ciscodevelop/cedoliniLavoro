@@ -1,0 +1,23 @@
+.container-form {
+    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  .container-input-user {
+    label {        
+      padding-right: 10px;
+      display: block;
+    }
+    input{
+        width: 50%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid #888;
+        background-color: transparent;
+        outline: none;
+        &::placeholder{
+          color: #888888c1;
+        }
+    }
+  }
+}
